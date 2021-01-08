@@ -1,6 +1,6 @@
 {
   "name": "@gatehub/ripple-binary-codec",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "XRP Ledger binary codec",
   "files": [
     "dist/*",
@@ -39,7 +39,7 @@
     "prepare": "npm run compile && npm test",
     "test": "jest",
     "lint": "eslint . --ext .ts --ext .test.js",
-    "publish": "npm version patch && npm publish --access restricted"
+    "publish": "npm version patch && npm publish --access restricted && git push --follow-tags"
   },
   "repository": {
     "type": "git",
