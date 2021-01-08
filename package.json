@@ -1,5 +1,5 @@
 {
-  "name": "ripple-binary-codec",
+  "name": "@gatehub/ripple-binary-codec",
   "version": "1.1.0",
   "description": "XRP Ledger binary codec",
   "files": [
@@ -38,7 +38,8 @@
     "compile": "tsc && cp ./src/enums/definitions.json ./dist/enums",
     "prepare": "npm run compile && npm test",
     "test": "jest",
-    "lint": "eslint . --ext .ts --ext .test.js"
+    "lint": "eslint . --ext .ts --ext .test.js",
+    "publish": "npm version patch && npm publish --access restricted"
   },
   "repository": {
     "type": "git",
